@@ -44,10 +44,7 @@ class _SetAccessPointPageState extends State<SetAccessPointPage> {
                     const SizedBox(height: 10),
                     TextFormField(
                       initialValue: ssid,
-                      decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Access Point SSID',
-                      ),
+                      decoration: const InputDecoration(border: OutlineInputBorder(), labelText: 'Access Point SSID'),
                       onFieldSubmitted: (text) => setState(() => _ssid = text),
                       onChanged: (text) => setState(() => _ssid = text),
                     ),

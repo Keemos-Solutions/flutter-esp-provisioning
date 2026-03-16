@@ -39,10 +39,7 @@ class _ScanDevicesPageState extends State<ScanDevicesPage> {
                       child: const Text('Scan'),
                     ),
                     const Spacer(),
-                    ElevatedButton(
-                      onPressed: _isScanning ? _stopScanTapped : null,
-                      child: const Text('Stop Scan'),
-                    ),
+                    ElevatedButton(onPressed: _isScanning ? _stopScanTapped : null, child: const Text('Stop Scan')),
                   ],
                 ),
               ),

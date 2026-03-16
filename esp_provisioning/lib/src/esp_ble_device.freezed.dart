@@ -12,7 +12,8 @@ part of 'esp_ble_device.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 EspBleDevice _$EspBleDeviceFromJson(Map<String, dynamic> json) {
   return _EspBleDevice.fromJson(json);
@@ -50,20 +51,19 @@ class _$EspBleDeviceCopyWithImpl<$Res, $Val extends EspBleDevice> implements $Es
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? name = null,
-    Object? rssi = null,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      rssi: null == rssi
-          ? _value.rssi
-          : rssi // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+  $Res call({Object? name = null, Object? rssi = null}) {
+    return _then(
+      _value.copyWith(
+        name: null == name
+            ? _value.name
+            : name // ignore: cast_nullable_to_non_nullable
+                as String,
+        rssi: null == rssi
+            ? _value.rssi
+            : rssi // ignore: cast_nullable_to_non_nullable
+                as int,
+      ) as $Val,
+    );
   }
 }
 
@@ -84,20 +84,19 @@ class __$$EspBleDeviceImplCopyWithImpl<$Res> extends _$EspBleDeviceCopyWithImpl<
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? name = null,
-    Object? rssi = null,
-  }) {
-    return _then(_$EspBleDeviceImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      rssi: null == rssi
-          ? _value.rssi
-          : rssi // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? name = null, Object? rssi = null}) {
+    return _then(
+      _$EspBleDeviceImpl(
+        name: null == name
+            ? _value.name
+            : name // ignore: cast_nullable_to_non_nullable
+                as String,
+        rssi: null == rssi
+            ? _value.rssi
+            : rssi // ignore: cast_nullable_to_non_nullable
+                as int,
+      ),
+    );
   }
 }
 
@@ -151,9 +150,7 @@ class _$EspBleDeviceImpl with DiagnosticableTreeMixin implements _EspBleDevice {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$EspBleDeviceImplToJson(
-      this,
-    );
+    return _$$EspBleDeviceImplToJson(this);
   }
 }
 

@@ -12,7 +12,8 @@ part of 'esp_wifi_access_point.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 EspWifiAccessPoint _$EspWifiAccessPointFromJson(Map<String, dynamic> json) {
   return _EspWifiAccessPoint.fromJson(json);
@@ -57,38 +58,36 @@ class _$EspWifiAccessPointCopyWithImpl<$Res, $Val extends EspWifiAccessPoint>
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? ssid = null,
-    Object? channel = null,
-    Object? security = null,
-    Object? rssi = null,
-  }) {
-    return _then(_value.copyWith(
-      ssid: null == ssid
-          ? _value.ssid
-          : ssid // ignore: cast_nullable_to_non_nullable
-              as String,
-      channel: null == channel
-          ? _value.channel
-          : channel // ignore: cast_nullable_to_non_nullable
-              as int,
-      security: null == security
-          ? _value.security
-          : security // ignore: cast_nullable_to_non_nullable
-              as EspWifiAccessPointSecurity,
-      rssi: null == rssi
-          ? _value.rssi
-          : rssi // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+  $Res call({Object? ssid = null, Object? channel = null, Object? security = null, Object? rssi = null}) {
+    return _then(
+      _value.copyWith(
+        ssid: null == ssid
+            ? _value.ssid
+            : ssid // ignore: cast_nullable_to_non_nullable
+                as String,
+        channel: null == channel
+            ? _value.channel
+            : channel // ignore: cast_nullable_to_non_nullable
+                as int,
+        security: null == security
+            ? _value.security
+            : security // ignore: cast_nullable_to_non_nullable
+                as EspWifiAccessPointSecurity,
+        rssi: null == rssi
+            ? _value.rssi
+            : rssi // ignore: cast_nullable_to_non_nullable
+                as int,
+      ) as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$EspWifiAccessPointImplCopyWith<$Res> implements $EspWifiAccessPointCopyWith<$Res> {
   factory _$$EspWifiAccessPointImplCopyWith(
-          _$EspWifiAccessPointImpl value, $Res Function(_$EspWifiAccessPointImpl) then) =
-      __$$EspWifiAccessPointImplCopyWithImpl<$Res>;
+    _$EspWifiAccessPointImpl value,
+    $Res Function(_$EspWifiAccessPointImpl) then,
+  ) = __$$EspWifiAccessPointImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String ssid, int channel, EspWifiAccessPointSecurity security, int rssi});
@@ -103,38 +102,39 @@ class __$$EspWifiAccessPointImplCopyWithImpl<$Res>
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? ssid = null,
-    Object? channel = null,
-    Object? security = null,
-    Object? rssi = null,
-  }) {
-    return _then(_$EspWifiAccessPointImpl(
-      ssid: null == ssid
-          ? _value.ssid
-          : ssid // ignore: cast_nullable_to_non_nullable
-              as String,
-      channel: null == channel
-          ? _value.channel
-          : channel // ignore: cast_nullable_to_non_nullable
-              as int,
-      security: null == security
-          ? _value.security
-          : security // ignore: cast_nullable_to_non_nullable
-              as EspWifiAccessPointSecurity,
-      rssi: null == rssi
-          ? _value.rssi
-          : rssi // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? ssid = null, Object? channel = null, Object? security = null, Object? rssi = null}) {
+    return _then(
+      _$EspWifiAccessPointImpl(
+        ssid: null == ssid
+            ? _value.ssid
+            : ssid // ignore: cast_nullable_to_non_nullable
+                as String,
+        channel: null == channel
+            ? _value.channel
+            : channel // ignore: cast_nullable_to_non_nullable
+                as int,
+        security: null == security
+            ? _value.security
+            : security // ignore: cast_nullable_to_non_nullable
+                as EspWifiAccessPointSecurity,
+        rssi: null == rssi
+            ? _value.rssi
+            : rssi // ignore: cast_nullable_to_non_nullable
+                as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$EspWifiAccessPointImpl with DiagnosticableTreeMixin implements _EspWifiAccessPoint {
-  const _$EspWifiAccessPointImpl(
-      {required this.ssid, required this.channel, required this.security, required this.rssi});
+  const _$EspWifiAccessPointImpl({
+    required this.ssid,
+    required this.channel,
+    required this.security,
+    required this.rssi,
+  });
 
   factory _$EspWifiAccessPointImpl.fromJson(Map<String, dynamic> json) => _$$EspWifiAccessPointImplFromJson(json);
 
@@ -193,18 +193,17 @@ class _$EspWifiAccessPointImpl with DiagnosticableTreeMixin implements _EspWifiA
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$EspWifiAccessPointImplToJson(
-      this,
-    );
+    return _$$EspWifiAccessPointImplToJson(this);
   }
 }
 
 abstract class _EspWifiAccessPoint implements EspWifiAccessPoint {
-  const factory _EspWifiAccessPoint(
-      {required final String ssid,
-      required final int channel,
-      required final EspWifiAccessPointSecurity security,
-      required final int rssi}) = _$EspWifiAccessPointImpl;
+  const factory _EspWifiAccessPoint({
+    required final String ssid,
+    required final int channel,
+    required final EspWifiAccessPointSecurity security,
+    required final int rssi,
+  }) = _$EspWifiAccessPointImpl;
 
   factory _EspWifiAccessPoint.fromJson(Map<String, dynamic> json) = _$EspWifiAccessPointImpl.fromJson;
 
