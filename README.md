@@ -21,6 +21,10 @@ To be clear, this plugin does not currently support:
 - All Dart unit tests can be run from VS Code.
 - Dart unit tests for each package can be run from the command line by changing into the package's directory and running `flutter test`.
 
+## Special Thanks
+
+- Thanks to [roberthartman](https://github.com/roberthartman) for initializing and contributing to amazing repository.
+
 [coverage_badge]: esp_provisioning/coverage_badge.svg
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
