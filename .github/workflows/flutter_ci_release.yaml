@@ -25,9 +25,6 @@ jobs:
         with:
           channel: stable
 
-      - name: Install dependencies
-        run: flutter pub get
-
       - name: Format & Analyze
         run: bash format-and-analyze.sh
 
