@@ -20,6 +20,7 @@ To be clear, this plugin does not currently support:
 - `dart format` and `flutter analyze` can be run via the script `format-and-analyze.sh`.
 - All Dart unit tests can be run from VS Code.
 - Dart unit tests for each package can be run from the command line by changing into the package's directory and running `flutter test`.
+- Added auto build package and publish to github registry.
 
 ## Special Thanks
 
